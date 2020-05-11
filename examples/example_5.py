@@ -56,7 +56,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--game', help='Atari game', default='pong')
     parser.add_argument('--run_ID', help='run identifier (logging)', type=int, default=0)
-    parser.add_argument('--cuda_idx', help='gpu to use ', type=int, default=None)
+    parser.add_argument('--cuda_idx', help='gpu to use ', type=int, default=1)
     parser.add_argument('--n_parallel', help='number of sampler workers', type=int, default=2)
     args = parser.parse_args()
     build_and_train(
